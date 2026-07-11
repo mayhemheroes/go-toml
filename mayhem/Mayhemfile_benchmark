@@ -1,0 +1,8 @@
+project: go-toml
+target: benchmark
+cmds:
+  - cmd: /mayhem/mayhem/benchmark
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/benchmark/testsuite
